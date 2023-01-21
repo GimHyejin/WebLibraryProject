@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+footer{
+   
+    font-size: 16px;
+    height: 104px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+footer>div{
+    border-top: solid 1px #DDDDDD;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(221, 221, 221);
+    margin: 0 auto;
+    
+    padding: 0px;
+}
+footer>div>img{
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 30px;
+}
+p{
+    padding: 0px;
+    display: block;
+    margin: 0px;
+
+}

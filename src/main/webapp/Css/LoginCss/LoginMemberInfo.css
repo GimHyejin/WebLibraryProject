@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color:  #f5f6f7;
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+   list-style: none;
+   padding: 0px;
+
+}
+span{
+    color: red;
+}
+/*위치 영역 확인*/
+
+
+#inputBox{
+    width: 600px;
+ 
+    margin-left: 40%;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    border:1px solid #9e9d9d;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
+    
+
+}
+
+div>div>a>img{
+    width: 22px;
+    height: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+div>div:nth-of-type(2) {
+    padding: 25px 0px 5px 35px;
+}
+div>div:nth-of-type(2)>img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    margin-left: 20%;
+}
+div>div:nth-of-type(2)>p {
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    color: #525252;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+/* 이메일 과 연락처*/
+
+/*이메일 입력*/
+
+
+div>div form{
+    margin-top: 50px;
+   
+}
+#inputBox hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#inputBox ul{
+    border-top: 2px solid #20407b;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid #9e9d9d;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+
+
+
+#inputBox ul>li:nth-of-type(2n+1){
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+ 
+    font-family:  'Noto Sans KR', sans-serif;
+    color:#2e2e2e;
+    float: left;
+
+}
+
+#inputBox ul>li input{
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 50px;
+    border: 1px solid #bbbbbb;
+    width: 50%;
+    
+}
+.margin_li{
+    margin-left: 0px;
+}
+
+#inputBox ul>li:nth-of-type(2).text2>input{
+    margin-left: 20px;
+    
+}
+#inputBox ul>li.name_text input{
+    width: 50%;
+}
+
+#inputBox ul>li:nth-of-type(6)>input{
+    width: 50%;
+}
+
+.pw_class{
+    width: auto;
+}
+.pw_class2{
+    margin-left: 40px;
+}
+.email_input{
+    width: 30%;
+}
+#adress input:nth-of-type(3){
+	margin-left: 150px;
+}
+#adress input:nth-of-type(4){
+	margin-left: 150px;
+}
+#adress input:nth-of-type(5){
+	margin-left: 150px;
+}
+#adress input:nth-of-type(6){
+	margin-left: 150px;
+}
+#inputBox button{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    margin-left: 35%;
+
+    border: 1px solid #5ca2d5;
+    background-color: #5ca2d5;
+    border-radius: 5px 5px 5px 5px;
+
+    font-family:  'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+
+}
+

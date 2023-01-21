@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+#LoginError{
+	background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 540px;
+    height: 280px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #e6e6e6;
+    
+    
+}
+.alert_img{
+	line-height: 30px;
+}
+.alert_title{
+
+    position: relative;
+}
+.alert_title>div{
+	width: 96%;
+    margin: 0 auto;
+    background: #8ed1de;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.alert_title>div>div{
+	position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.text_box2{
+	background: url(../../Img/WindowBorrowImg/popup_ic_im.png) left center no-repeat;
+    padding: 50px 0;
+    padding-left: 95px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    display: inline-block;
+}
+.check_btn{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.check_btn>button{
+	background: #8ed1de;
+	width: 105px;
+    height: 37px;
+    border-radius: 10px;
+    line-height: 37px;
+    color: #fff;
+    margin-top: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}

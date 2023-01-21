@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+}
+/*예비 박스*/
+#section>div{
+    margin-top: 30px;
+    height: 370px;
+    padding:30px 0px 40px 40px;
+    background-image: url("Main_img/banner_bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#section>div>div{
+    display: inline-block;
+    margin-left: 100px;
+    background-color: white;
+    float: left;
+}
+
+#section>div>div>ul{
+    width: 760px;
+    height: 330px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#section>div>div>ul>li>img{
+    width: 740px;
+    height: 320px;
+}
+#section>div>div>fieldset{
+    width: 400px;
+    height: 340px;
+    border: none;
+}
+
+/*로그인*/
+#section>div>div>div{
+    width: 500px;
+    height: 310px;
+    
+    margin: 15px 15px 15px 15px;
+    background-color:#F2f2f2;
+}
+#section>div>div>div>form>fieldset{
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0px 2px;
+    padding: 30px;
+    border: none;
+}
+#section>div>div>div>form>fieldset>legend{
+    visibility: hidden;
+}
+#section>div>div>div>form>fieldset>input[type=checkbox]{
+    margin: 3px 3px 3px 4px;
+}
+#section>div>div>div>form>fieldset>input[type=text]{
+    padding: 0px 16px;
+    margin: 8px 8px 8px 0px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #9e9d9d;
+    border-radius: 5px 5px 5px 5px;
+}
+#section>div>div>div>form>fieldset>input[type=password]{
+    padding: 0px 16px;
+    margin: 0px 8px 8px 0px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #9e9d9d;
+    border-radius: 5px 5px 5px 5px;
+}
+#section>div>div>div>form>fieldset>input[type=submit]#logIn{
+    float: right;
+    width: 113px;
+    height: 50px;
+    border:1px solid #20407B;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #20407B;
+    color: white;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+#section>div>div>div>form>fieldset>p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #5a5a5a;
+    display: inline-block;
+
+    
+
+}
+
+#section>div>div>div>form>fieldset>input[type=submit]#logOut{
+   
+    background-image: url('Main_img/lookLogin.PNG');
+    background-size: 100%;
+    border: none;
+    width: 113px;
+    height: 92px;
+    float: right;
+    cursor: pointer;
+
+    margin-top: 5px;
+    
+}
+#section>div>div>div>form>fieldset>div:nth-of-type(1){
+    padding: 15px 0px 0px;
+   
+    
+}
+#section>div>div>div>form>fieldset>div:nth-of-type(2){
+    padding: 15px 0px 0px 0px;
+    
+}
+
+#section>div>div>div>form>fieldset>div>a{
+    margin-right: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+	color:black;
+}
+
+
+
+/*공지사항*/
+#announcements{
+   padding-top: 10px;
+}
+#announcements>div{
+    background-color: #F2f2f2;
+    display: inline-block;
+    height: 280px;
+}
+#announcements>div>p{
+    color: #0092d0;
+    font-size: 22px;
+    margin: 15px 5px 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#announcements>div>hr{
+    border: 1px solid #0092d0;
+}
+#announcements>div>div{
+    margin-top: 10px;
+}
+#announcements>div>div>table{
+    margin: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+#announcements>div>div>table td{
+    
+    overflow: hidden;
+    padding: 0px 50px 0px 50px;
+    border-bottom: 1px solid #d7d7d7d7;
+}
+
+.announcements_left{
+    width: 700px;
+   
+    padding-left: 150px;
+}
+.announcements_right{
+    
+    float: right;
+    width: 700px;
+
+    
+}
+
+/*bookOfMonth_article_ 이달의 도서*/
+.bookOfMonth_article{
+    margin-top: 50px;
+    min-width: 1500px;
+    width: 1500px;
+}
+.bookOfMonth_article>p{
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:22px;
+    margin-left: 20px;
+}
+.bookOfMonth_article>hr{
+    position: relative;
+    border: 1px solid #f36c4f;
+    margin-bottom: 50px;
+}
+
+/* 슬라이드 Style */
+.slidebox {max-width:1500px;margin:0 auto;}
+.slidebox .slidelist {white-space:nowrap;font-size:0;overflow:hidden;margin-top: 5%;}
+.slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;width:100%;transition:all 1s;}
+.slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;}
+.slidebox .slidelist .slideitem > a img:nth-of-type(1){margin-left: 100px;  }
+.slidebox .slidelist .slideitem > a img {max-width:100%;width:15%;height: 20%;margin-left: 10px; margin-right: 10px;}
+.slidebox .slidelist .slideitem > a label {position:absolute;top:50%;transform:translateY(-50%);padding:10px;border-radius:50%;cursor:pointer;}
+.slidebox .slidelist .slideitem > a label.prev {left:-40px; width:10%;height: 10%; background:  url("Main_img/Arrow_left.jpg")  center center / 50% no-repeat;}
+.slidebox .slidelist .slideitem > a label.next {right:-30px;width:10%;height: 10%; background: url("Main_img/Arrow_right.jpg") center center / 50% no-repeat;}
+
+
+[name="slide"] {display:none;}
+#slide01:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 15s infinite;}
+#slide02:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 15s infinite;}
+#slide03:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 15s infinite;}
+
+/*이미지 슬라이드 */
+@keyframes slide01 {
+	0% {left:0%;}
+	33% {left:0%;}
+	34% {left:-100%}
+	66% {left:-100%;}
+	67% {left:-200%;}
+	99% {left:-200%;}
+	100% {left:0%;}
+}
+
+@keyframes slide02 {
+	0% {left:0%;}
+	33% {left:0%;}
+	34% {left:-100%;}
+	66% {left:-100%;}
+	67% {left:100%;}
+	99% {left:100%;}
+	100% {left:0%;}
+}
+
+@keyframes slide03 {
+	0% {left:0%;}
+	33% {left:0%;}
+	34% {left:200%;}
+	66% {left:200%;}
+	67% {left:100%;}
+	99% {left:100%;}
+	100% {left:0%;}
+}

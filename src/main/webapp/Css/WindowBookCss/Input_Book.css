@@ -1,0 +1,276 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+}
+
+section{
+    width: 1000px;
+    border-top: 2px solid #8ED1DE;
+    border-bottom: 2px solid #8ED1DE;
+}
+
+/*section의 시작*/
+
+.section_div{
+   
+    height: auto;
+    padding:20px 110px 0px 140px;
+}
+/*타이틀 도서등록*/
+
+
+.section_title{
+    margin: 25px 0px 10px;
+    padding: 0px 0px 10px 10px;
+    
+    color: #323232;
+    border-bottom: 4px solid #8ed1de;
+}
+.section_title>p{
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    clear: both;
+    
+}
+
+/*책 입력*/
+#section_middle{
+    position: relative;
+ 
+    outline: none;
+    direction: ltr;
+    clear: both;
+    
+    border: 1px solid #e2e2e2;
+    background-color: #f5f5f5;
+
+    height: 320px;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    padding:40px 110px 20px 140px;
+
+    
+    position: relative;
+
+}
+/* 책의 이미지*/
+div#input_div{
+    width: 230px;
+    height: 330px;
+    display: inline-block;
+    float: left;
+    margin: 0px;
+    margin-right: 70px;
+    border: 1px solid #dddddd;
+    position: relative;
+    background-color: white;	
+
+}
+div#input_div>img{
+    width: 100%;
+    height: 100%;
+   	background-repeat: no-repeat;
+}
+/*책의 내용입력*/
+
+#section_middle p:nth-of-type(1){
+    color: #2c2c2c;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 5px 0px 20px;
+    display: inline-block;
+    width: 100px;
+}
+#section_middle p:nth-of-type(2){
+    color: #adadad;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-left: 30px;
+}
+#section_book_info input[type=text]{
+    border: 1px solid #adadad;
+    width: 400px;
+    height: 30px;
+
+}
+
+#section_book_info input[type=submit]{
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+    border: 1px solid #006EAF;
+    border-radius: 10px 10px 10px 10px; 
+    background: #006EAF;
+    /* padding-top: 5px; */
+    margin: 0px;
+   
+    overflow: visible;
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    font-size: 16px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+a#input_BookImg{
+	display:inline-block;
+	height: 32px;
+    width: 103px;
+   
+    vertical-align: top;
+  
+    border: 1px solid #006EAF;
+    border-radius: 10px 10px 10px 10px; 
+    background: #006EAF;
+    padding-top: 5px;
+    margin: 0px;
+   
+    overflow: visible;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+/*책 칼럼*/
+#bookField_div{
+	float:left;
+}
+#boardColum_div{
+	float:left;
+}
+button#input_bookImg_btn{
+	width: 230px;
+	height: 30px;
+	border: 1px solid #dddddd;
+	border-radius:5px 5px;
+	font-size: 14px;
+	cursor:pointer;
+	color: #2c2c2c;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+/*contents 박스*/
+/* 책소개 작가 소개 목차*/
+.section_contents{
+    clear: both;
+    margin-top: 50px;
+    
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    padding:20px 110px 0px 140px;
+
+}
+.section_contents div:nth-of-type(1){
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+#section_ul{
+    box-sizing: border-box;
+    
+
+}
+.checked{
+    color: white;
+    background: #8ed1de;
+}
+.unchecked{
+    background: white;
+    color: #0294b1;
+}
+#section_ul li{
+    width: calc(90%/3);
+    float: left;
+    text-align: center;
+    padding: 13px 0;
+
+    border: 3px solid #8ED1DE;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+.section_contents>div:nth-of-type(2),div:nth-of-type(3),div:nth-of-type(4){
+    clear: both;
+    padding-top: 10px;
+}
+
+/* 책 소개*/
+
+.section_bookTitle{
+    border-bottom: 3px solid #f36c4f;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.section_bookTitle b{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    
+}
+.section_bookTitle span{
+    font-weight: 200;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #5a5a5a;
+}
+.section_bookTitle>form>button{
+    width: 106px;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+    background: #8ed1de;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+    position: relative;
+    top: -12px;
+    float: right;
+}
+
+/*책 소개 내용*/
+.section_bookInfo{
+    padding: 35px 0 50px 0;
+}
+.section_bookInfo textarea{
+    width: 754px;
+    height: 221px;
+    border: 1px solid #adadad;
+    resize: none;
+}
+
+/*책 감추기*/
+#section_contents_menu2{
+    display: none;
+}
+#section_contents_menu3{
+    display: none;
+}
+

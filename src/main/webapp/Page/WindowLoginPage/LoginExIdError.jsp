@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 기존아이디가 있다. -->
+	<script type="text/javascript">
+		alert("현재 아이디가 존재합니다.");
+		location.href="LoginExId.jsp";
+		
+	</script>
+</body>
+</html>

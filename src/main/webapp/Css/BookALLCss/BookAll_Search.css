@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+
+}
+/*항목 전체 선택*/
+#subject_section{
+    position: relative;
+    width: 1000px;
+    margin: 30px auto 0;
+   
+}
+
+/*section 영역 top영역*/
+.section_title_top{
+    color: #323232;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding-left: 10px;
+    border-bottom: 4px solid #8ed1de;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+.section_title_top>h4{
+    display: inline-block;
+    font-weight: normal;
+}
+/*서브 영역 */
+.subject_check{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    background: no-repeat 0;
+    background-image: url('../../Img/BookALLImg/subjectBg.gif');
+}
+.subject_check>dl{
+    border-top: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+.subject_check dt{
+    position: relative;
+    float: left;
+    width: 170px;
+    min-height: 16px;
+    overflow: hidden;
+    padding: 10px 20px;
+    background: #eee;
+    line-height: 22px;
+    padding-top: 15px;
+}
+.subject_check dt>input{
+    margin-right: 5px;
+}
+.subject_check dt>a{
+    margin-top: 15px;
+    text-align: center;
+}
+.subject_check ul{
+    min-height: 16px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.subject_check li{
+    float: left;
+    padding-left: 10px;
+    margin: 3px 15px 3px 0;
+}
+.subject_check li>input{
+    margin-right: 5px;
+}
+.subject_check li>a{
+    display: inline-block;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.plus{
+    width: 19px;
+    height: 10px;
+    margin-left: 10px;
+    background: no-repeat;
+    background-image: url('../../Img/BookALLImg/plusIco.gif');
+    cursor: pointer;
+}
+/* 전체 메뉴바 submit*/
+#input_book{
+	float:left;
+	width:100px;
+	height:35px;
+	padding-top:5px;
+}
+.check_submit{
+    text-align: center;
+    width: 50px;
+    height: 30px;
+   
+    margin-bottom: 35px;
+    float: right;
+
+    border: 1px solid #5ca2d5;
+    background-color: #5ca2d5;
+    border-radius: 5px 5px 5px 5px;
+
+    font-family:  'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.check_submit:visited{
+	color:white;
+}
+
+/*검색바*/
+.Search_middle{
+    clear: both;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    
+    border-bottom: 1px solid #f36c4f;
+}
+.Search_middle li{
+    padding-left: 10px;
+    display: inline-block;
+    float: right;
+}
+.Search_middle .reSearch{
+    display: inline-block;
+    overflow: visible;
+    position: relative;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+}
+.reSearch>input{
+    width: 120px;
+    height: 20px;
+    position: relative;
+    color: #000;
+    border: 1px solid white;
+   
+}
+.reSearch>input[type="submit"]{
+    right: 5px;
+    top: 55%;
+    cursor: pointer;
+    display: inline-block;
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url(../../Img/BookALLImg/search2.png) no-repeat center 50%;
+    text-indent: -9999px;
+    margin: auto;
+}
+.Search_select{
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    vertical-align: middle;
+    
+}
+
+.Search_select>select{
+   
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #646464;
+    font-size: 13px;
+    font-weight: 350;
+    padding: 0 20px;
+    height: 30px;
+    border: 1px solid #d7d7d7;
+    
+}
+/* 책의 이미지*/
+#book_img{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+#book_img>ul>li{
+    width: 21.75%;
+    margin-right: 3% !important;
+    float: left;
+}
+#book_img>ul>li>div{
+    position: relative;
+    /* width: 170px; */
+    max-height: 252px;
+    border-bottom: 1px solid #e1e1e1;
+    
+}
+#book_img>ul>li>div>a{
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+
+}
+#book_img>ul>li>div>a>img{
+    width: 100%;
+    height: 250px;
+}
+#book_img>ul>li>div>a>div{
+     opacity: 0; 
+    display: none;
+    transition: all .6s linear;
+    position: absolute;
+    /* width: 170px;
+    width: 100%;
+    height: 100%;
+    */
+    width: inherit;
+    height: 565px;
+    bottom: 0;
+    background-color: rgba(50, 50, 50, 0.8);
+    overflow: hidden;
+    
+}
+#book_img>ul>li>div>a>div>p{
+    padding: 20px;
+}
+
+.bookInfo_img:hover .bookInfo_text{
+     opacity:1; 
+    /* display: inline-block; */
+    
+}
+
+
+/*책의 정보 버튼*/
+.btn_bookInfo{
+    padding-top: 13px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.btn_bookInfo .btn_buy{
+    font-size: 14px;
+    margin-right: 6px;
+    border: 1px solid #448ccb;
+    background-color: #448ccb;
+    padding: 3px 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn_bookInfo .btn_choice{
+    padding: 3px 5px;
+    color: #fff;
+    border: 1px solid #f36c4f;
+    background-color: #f36c4f;
+    font-size: 14px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.btn_bookInfo .btn_sub{
+    display: inline-block;
+    border: 1px solid white;
+    background: url(../../Img/BookALLImg/tab_menu2.png) 15px 0 no-repeat;
+    width: 3px;
+    height: 19px;
+    position: relative;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+.btn_sub>#book_info{
+    border: 1px solid #d7d7d7;
+    background: #f2f2f2;
+    padding: 10px;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    z-index: 3;
+    display: none;
+    width: 95px;
+}
+.btn_sub>#book_info>span{
+    font-size: 12px;
+    color: #323232;
+    display: block;
+    text-align: left;
+    margin-top: 2px;
+}
+/*책의 제목*/
+#bookTitle{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 10px;
+    width: 100%;
+    height: 52px;
+}
+
+/* 이동버튼 footer */
+.flooter_div{
+   
+    height: 40px;
+    background: #f5f5f5;
+    margin-bottom: 60px;
+    display: block !important;
+    clear: both;
+    padding-left: 30%
+}
+.flooter_div>div{
+
+}
+.flooter_div button.pgBtn{
+    position: relative;
+    display: inline-block;
+    
+    border: 1px solid transparent;
+    width: 30px;
+    height: 30px;
+    
+    vertical-align: middle;
+
+}
+
+.flooter_div a.pg{
+    display: inline-block;
+    overflow: hidden;
+    width: 44px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 5px;
+}
